@@ -1,4 +1,4 @@
-# Cordova File Extra Plugin
+# Boox File Plugin
 
 Simple plugin that Process File.
 
