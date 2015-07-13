@@ -7,7 +7,7 @@ Simple plugin that Process File.
 ## Using
 Clone the plugin
 
-    $ git clone https://github.com/booxasia/boox-file.git
+    $ git clone https://github.com/booxasia/booxfile.git
 
 Create a new Cordova Project
 
@@ -16,7 +16,7 @@ Create a new Cordova Project
 Install the plugin
 
     $ cd hello
-    $ cordova plugin add ../boox-file
+    $ cordova plugin add ../booxfile
     
 
  
