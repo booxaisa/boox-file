@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-        id="com.example.hello"
+        id="com.boox.booxfile"
         version="0.7.0">
 
   <name>Hello</name>
@@ -9,9 +9,9 @@
     <engine name="cordova" version=">=3.4.0"/>
   </engines>
 
-  <asset src="www/hello.js" target="js/hello.js"/>
+  <asset src="www/booxfile.js" target="js/booxfile.js"/>
 
-  <js-module src="www/hello.js" name="hello">
+  <js-module src="www/booxfile.js" name="booxfile">
     <clobbers target="hello" />
   </js-module>
 
@@ -19,27 +19,27 @@
 
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="Hello">
-        <param name="android-package" value="com.example.plugin.Hello"/>
+        <param name="android-package" value="com.boox.plugin.booxfile"/>
       </feature>
     </config-file>
 
-    <source-file src="src/android/Hello.java" target-dir="src/com/example/plugin/"/>
+    <source-file src="src/android/booxfile.java" target-dir="src/com/boox/plugin/"/>
   </platform>
 
   <platform name="ios">
     
     <config-file target="config.xml" parent="/widget">
-      <feature name="Hello">
-        <param name="ios-package" value="HWPHello" />
+      <feature name="Booxfile">
+        <param name="ios-package" value="HWPBooxfile" />
       </feature>
     </config-file>
 
-    <header-file src="src/ios/HWPHello.h" target-dir="HelloPlugin"/>
-    <source-file src="src/ios/HWPHello.m" target-dir="HelloPlugin"/>
+    <header-file src="src/ios/HWPBooxfile.h" target-dir="BooxfilePlugin"/>
+    <source-file src="src/ios/HWPBooxfile.m" target-dir="BooxfilePlugin"/>
   </platform>
 
   <platform name="wp7">
-    <source-file src="src/wp7/Hello.cs"/>
+    <source-file src="src/wp7/Booxfile.cs"/>
   </platform>
 
 </plugin>
