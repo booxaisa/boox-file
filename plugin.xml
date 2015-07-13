@@ -25,12 +25,12 @@
   <name>File Extras</name>
   <dependency id="org.apache.cordova.file" />
 
-  <js-module src="booxfile.js" name="BooxFile">
+  <js-module src="www/booxfile.js" name="BooxFile">
     <clobbers target="cordova.plugins.booxfile" />
   </js-module>
 
   <platform name="android">
-    <source-file src="android/BooxFile.java" target-dir="src/com/boox/booxfile" />
+    <source-file src="src/android/BooxFile.java" target-dir="src/com/boox/booxfile" />
 
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="BooxFile">
@@ -40,7 +40,7 @@
   </platform>
 
   <platform name="ios">
-    <source-file src="ios/BooxFile.m" />
+    <source-file src="src/ios/BooxFile.m" />
 
     <config-file target="config.xml" parent="/*">
       <feature name="BooxFile">
